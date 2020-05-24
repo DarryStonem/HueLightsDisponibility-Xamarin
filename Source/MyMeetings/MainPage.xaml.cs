@@ -50,7 +50,7 @@ namespace MyMeetings
                 //var key = await client.RegisterAsync(bridges.First().Id, "Sample App");
                 client.Initialize(bridges.First().Id, "");
                 var lights = await client.GetLightsAsync();
-                var lightResult = await client.SendCommandAsync(new LightCommand().TurnOn());
+                var lightResult = await client.SendCommandAsync(new LightCommand().TurnOff());
             }
             catch (Exception ex)
             {
